@@ -15,18 +15,19 @@
 //     }
 // }
 
-import clear from '../img/clear.jpg'
+
 import cloud from '../img/cloud.jpg'
 import drizzle from '../img/drizzle.jpg'
 import mist from '../img/mist.jpg'
 import rain from '../img/rain.jpg'
 import snow from '../img/snow.jpg'
 import thunder from '../img/thunder.jpg'
+import clear from '../img/clear.jpg'
 
 export const getColorByWeatherId=(weatherId)=>{
 
     if(weatherId==800)
-        return 
+        return `url(${clear}) center / cover no-repeat`
     // 'linear-gradient(135deg, #4FACFE 0%, #FFD86F 100%)'
 
     const group = Math.floor(weatherId/100)
