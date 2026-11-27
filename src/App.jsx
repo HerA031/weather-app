@@ -5,6 +5,7 @@ import WeatherCard from './components/WeatherCard'
 import { fetchCoordinates } from './api/geo'
 import { fetchWeatherByCoords } from './api/weather'
 import { getColorByWeatherId } from './api/bgColor'
+// import { getImageByWeatherId } from './api/bgImage'
 const CITIES = ['Seoul', 'Busan', 'Jeju City', 'Tokyo', 'New York']
 
 function App() {
@@ -58,6 +59,9 @@ function App() {
     ? getColorByWeatherId(weather.weather[0].id)
     : 'linear-gradient(135deg, #98b8ff 0%, #60a5fa 100%)'
 
+/*     const bgImage = weather?.weather?.[0]?.id
+  ? getImageByWeatherId(weather.weather[0].id)
+  : 'clear' */
 
   return (
     <section style={{ background: bg }}>

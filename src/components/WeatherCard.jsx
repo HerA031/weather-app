@@ -19,7 +19,7 @@ const WeatherCard = ({ weather }) => {
       </div>
       <p className="temp">{Math.round(temp)}°</p>
       <p className="desc">{description}</p>
-      <p className="outfit">오늘 옷차림
+      <p className="outfit">
         {/* feels_like */}
         {getOutfit(Math.round(temp))}
       </p>
